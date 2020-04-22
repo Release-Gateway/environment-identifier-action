@@ -1,0 +1,18 @@
+name: 'Environment identifier'
+description: 'Generate a short environment identifier based on branch and input prefix/suffix'
+inputs:
+  name:
+    description: "Environment root name to use. Defaults to GITHUB_REF"
+    required: false
+  prefix:
+    description: 'String prefix to add to identifier'
+    required: false
+  suffix:
+    description: 'String suffix to add to identifier'
+    required: false
+outputs:
+  id:
+    description: 'Generated environment identifier'
+runs:
+  using: 'node12'
+  main: 'index.js'
