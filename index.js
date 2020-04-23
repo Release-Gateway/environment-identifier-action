@@ -14,8 +14,8 @@ async function init() {
     
     let envId = slugify(name ? name : gitRef);
     
-    if(envId.length > 10){
-        envId = envId.substr(0, 10);
+    if(envId.length > 20){
+        envId = envId.substr(0, 20);
     }
     
     if(prefix) {
